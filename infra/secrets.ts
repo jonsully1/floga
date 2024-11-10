@@ -1,0 +1,1 @@
+export const GoogleClientID = new sst.Secret("GoogleClientID");

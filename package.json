@@ -1,0 +1,19 @@
+{
+  "name": "socialize",
+  "version": "0.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "sst dev",
+    "remove": "sst remove"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "typescript": "5.6.2"
+  },
+  "dependencies": {
+    "hono": "^4.6.8",
+    "sst": "3.2.76"
+  }
+}
