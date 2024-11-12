@@ -3,6 +3,7 @@ node_modules
 
 # sst
 .sst
+.build
 
 # tmp files
 .#*
