@@ -5,7 +5,6 @@ import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
-import Button from "@mui/material/Button";
 import CloseIcon from "@mui/icons-material/Close";
 import IconButton from "@mui/material/IconButton";
 
@@ -29,25 +28,17 @@ const headerStyle = {
 
 export default function CustomModal({
   title,
-  btnName = '',
+  open = false,
+  handleClose,
   children,
 }: {
   title: string;
-  btnName?: string;
+  open: boolean;
+  handleClose: () => void;
   children: React.ReactNode;
 }) {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-
   return (
     <div>
-      <Button
-        onClick={handleOpen}
-        sx={{ my: 2, color: "white", display: "block" }}
-      >
-        {!btnName ? title : btnName}
-      </Button>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"

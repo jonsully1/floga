@@ -19,7 +19,7 @@ export interface IPomodoro {
 }
 type TimerType = "pomodoro" | "shortBreak" | "longBreak";
 
-type Action =
+export type Action =
   | { type: "decrement"; id: number; timer: TimerType; value: number }
   | { type: "resetTimer"; id: number; timer: TimerType; value: number }
   | { type: "add"; value: IPomodoro }

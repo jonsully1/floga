@@ -38,7 +38,6 @@ const NumberInput = React.forwardRef(function CustomNumberInput(
 
 export default function QuantityInput({
   initialValue,
-  stage,
   onChange,
 }: {
   initialValue: number;
